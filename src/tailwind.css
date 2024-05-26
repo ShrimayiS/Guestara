@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+
+.grid-cols-8 {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-cell {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.day-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.event {
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 4px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.resource-bar .resource {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.resource-bar button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resource-bar button:hover {
+  background-color: #2563eb;
+}
